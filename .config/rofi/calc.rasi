@@ -1,0 +1,71 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.9.1
+ **/
+* {
+    fg-alt:  rgba ( 120, 124, 153, 100 % );
+    bg:      rgba ( 17, 18, 29, 50 % );
+    padding: 0;
+    margin:  0;
+    bg-alt:  rgba ( 68, 75, 106, 50 % );
+    fg:      White;
+    none:    transparent;
+    spacing: 0;
+    border:  0;
+}
+window {
+    width:            40.0000% ;
+    background-color: var(bg);
+    border-radius:    10;
+}
+
+mainbox {
+    padding:          0;
+    background-color: var(bg);
+    margin:           0;
+    spacing:          0;
+    border:           0;
+    border-radius:    10;
+    
+}
+inputbar {
+    padding:          10;
+    size:             30;
+    background-color: var(bg-alt);
+    children:         [ "prompt","entry" ];
+}
+prompt {
+    background-color: var(none);
+    vertical-align:   0.50;
+    text-color:       var(fg);
+}
+entry {
+    padding:          12;
+    background-color: var(none);
+    text-color:       var(fg);
+}
+listview {
+    background-color: var(none);
+    columns:          1;
+    lines:            8;
+}
+element {
+    padding:          0px ;
+    background-color: var(none);
+    text-color:       var(fg-alt);
+}
+element selected {
+    background-color: var(bg-alt);
+    text-color:       var(fg);
+}
+element-text {
+    background-color: var(none);
+    vertical-align:   0.50;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: var(none);
+    margin:           2px ;
+    size:             50;
+    border-radius:    10;
+}
